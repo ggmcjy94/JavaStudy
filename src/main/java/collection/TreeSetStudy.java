@@ -11,6 +11,11 @@ package collection;
 // 7, 4, 9, 1, 5
 // 7 저장 -> 4 비교 (왼쪽) -> 9비교 (오른쪽) -> 7 > 1 , 4 비교 (왼쪽)
 // 7 > 5 , 4 비교 (오른쪽)
+
+import java.util.Comparator;
+import java.util.Set;
+import java.util.TreeSet;
+
 /**
  *          7
  *       4     9
@@ -18,5 +23,38 @@ package collection;
  **/
 public class TreeSetStudy {
 
+    public static void main(String[] args) {
+        Set set = new TreeSet(); //정렬
+
+        for (int i =0; set.size() < 6; i++) {
+            int num = (int) ((Math.random()*45) +1);
+            set.add(num);
+        }
+
+//        set.add(new Test());
+//        set.add(new Test());
+//        set.add(new Test());
+//        set.add(new Test());
+//        set.add(new Test());
+        System.out.println("set = " + set);
+    }
 
 }
+
+////tree set 은 비교 기준이 필요해 Comparable,Comparator 을 해야된다 왜냐 정렬을 해야되므로
+//class Test implements Comparable{
+//
+//    @Override
+//    public int compareTo(Object o) {
+//        return -1;
+//    }
+//}
+//
+//
+//class TestComp implements Comparator {
+//
+//    @Override
+//    public int compare(Object o1, Object o2) {
+//        return 1;
+//    }
+//}
