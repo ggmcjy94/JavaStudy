@@ -29,9 +29,7 @@ public class HashMapStudy3 {
 
     private static Object printBar(char c, int value) {
         char[] bar = new char[value];
-        for (int i = 0; i < bar.length; i++) {
-            bar[i] = c;
-        }
+        Arrays.fill(bar, c);
         return new String(bar);
     }
 }
