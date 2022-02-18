@@ -54,6 +54,8 @@ public class WildCardStudy {
         appleBox.add(new Apple2());
         appleBox.add(new Apple2());
 
+
+
         System.out.println("Juicer.makeJuice(fruitBox) = " + Juicer.makeJuice(fruitBox));
         System.out.println("Juicer.makeJuice(appleBox) = " + Juicer.makeJuice(appleBox));
     }
