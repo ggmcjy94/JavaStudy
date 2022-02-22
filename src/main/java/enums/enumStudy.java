@@ -22,7 +22,8 @@ public class enumStudy {
 
         switch (d1) {
             case EAST:
-                System.out.println("The direction is EAST."); break;
+                System.out.println("The direction is EAST.");
+                break;
             case SOUTH:
                 System.out.println("The direction is SOUTH.");
                 break;
