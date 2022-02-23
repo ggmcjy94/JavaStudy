@@ -1,5 +1,7 @@
 package enums;
 
+import jdk.jfr.Timespan;
+
 enum Direction {EAST, SOUTH, WEST, NORTH}
 
 public class enumStudy {
@@ -43,6 +45,5 @@ public class enumStudy {
         for (Direction d : dArr) {
             System.out.printf("%s=%d%n",d.name(), d.ordinal());//ordinal 순서
         }
-
     }
 }
